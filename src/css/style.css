@@ -496,7 +496,7 @@ body {
         padding-left: 1.6rem;
         padding-right: 0.8rem; } }
     .sidebar__logo--icon {
-      height: 2.4rem; }
+      height: 2.75rem; }
   .sidebar__btn {
     height: 5.5rem;
     padding: 0 1.6rem;
@@ -513,6 +513,8 @@ body {
     display: flex;
     gap: var(--spacing-2);
     align-items: center; }
+    .sidebar__btn[disabled] {
+      opacity: 0.25; }
     @media only screen and (max-width: 992px) {
       .sidebar__btn {
         display: none; } }

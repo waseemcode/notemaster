@@ -31,6 +31,7 @@ export const client = {
       activeNotebook.call(navItem);
       notePanelTitle.textContent = notebookData.name;
       notePanel.innerHTML = emptyNotesTemplate;
+      disableNoteCreateBtns(true);
     },
 
     read(notebookList) {

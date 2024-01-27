@@ -37,7 +37,7 @@
     justify-content: space-between;
 
     &--icon {
-      height: 2.4rem;
+      height: 2.75rem;
     }
   }
 
@@ -54,6 +54,10 @@
     box-shadow: var(--shadow-1);
     transition: box-shadow var(--tr-duration-short) var(--tr-easing-linear);
     --state-layer-bg: var(--on-primary-container);
+
+    &[disabled] {
+      opacity: 0.25;
+    }
 
     @media only screen and (max-width: 992px) {
       display: none;
